@@ -86,3 +86,8 @@ if context.have_git
     source "gitignore"
   end
 end
+
+# editorconfig
+cookbook_file "#{cookbook_dir}/.editorconfig" do
+    source "editorconfig"
+end
