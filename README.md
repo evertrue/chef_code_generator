@@ -18,14 +18,17 @@ This cookbook is not quite like other cookbooks.
 2. You have the option of specifying which code generator to use each time or to make it your default
   * Specify the generator each time. (pass the parent of the code_generator folder)
   ```
-  chef generate cookbook <your cookbook> --generator-cookbook '~/dev'
+  chef generate cookbook <your cookbook> --generator-cookbook '~/dev' --email="devops@evertrue.com" --copyright "EverTrue, inc."
   ```
   * Always use it. Backup your default chef generator and then link up our generator
   ```
   sudo mv /opt/chefdk/embedded/apps/chef-dk/lib/chef-dk/skeletons/code_generator/ ~/dev/original_code_generator
   sudo ln -s ~/dev/code_generator /opt/chefdk/embedded/apps/chef-dk/lib/chef-dk/skeletons/code_generator
+  chef generate cookbook <your cookbook> --email="devops@evertrue.com" --copyright "EverTrue, inc."
   ```
-    
+
+
+
 ## Contributing
 
 1. Fork the repository on Github
