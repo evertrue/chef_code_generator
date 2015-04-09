@@ -10,13 +10,21 @@ Customised Chef Generator Cookbook for starting your Chef masterpiece
 
 This cookbook is not quite like other cookbooks.
 
-1. Clone this cookbook to some folder named code_generator `~/dev/code_generator`
-  * `git clone https://github.com/evertrue/et_chef_generator ~/dev/code_generator`
+1. Clone this cookbook a folder named **code_generator** ex. `~/dev/code_generator`
+
+  ```
+  git clone https://github.com/evertrue/et_chef_generator ~/dev/code_generator
+  ```
 2. You have the option of specifying which code generator to use each time or to make it your default
-  * Specify each time: `chef generate cookbook <your cookbook> --generator-cookbook '~/dev'`
-  * Make Default: Backup your default chef generator and then clone our generator to it
-    * mv /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator/ ~/dev/original_code_generator
-    * ln -s /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator/ ~/dev/code_generatore
+  * Specify the generator each time. (pass the parent of the code_generator folder)
+  ```
+  chef generate cookbook <your cookbook> --generator-cookbook '~/dev'
+  ```
+  * Always use it. Backup your default chef generator and then link up our generator
+  ```
+  mv /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator/ ~/dev/original_code_generator
+  ln -s /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator/ ~/dev/code_generator
+  ```
     
 ## Contributing
 
