@@ -22,8 +22,8 @@ This cookbook is not quite like other cookbooks.
   ```
   * Always use it. Backup your default chef generator and then link up our generator
   ```
-  mv /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator/ ~/dev/original_code_generator
-  ln -s /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator/ ~/dev/code_generator
+  sudo mv /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator/ ~/dev/original_code_generator
+  sudo ln -s ~/dev/code_generator /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-dk-0.4.0/lib/chef-dk/skeletons/code_generator
   ```
     
 ## Contributing
