@@ -109,6 +109,11 @@ cookbook_file "#{cookbook_dir}/.editorconfig" do
     source "editorconfig"
 end
 
+# rubocop
+cookbook_file "#{cookbook_dir}/.rubocop.yml" do
+    source "rubocop.yml"
+end
+
 # travis
 cookbook_file "#{cookbook_dir}/.travis.yml" do
     source "travis.yml"
