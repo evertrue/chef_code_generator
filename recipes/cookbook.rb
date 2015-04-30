@@ -118,3 +118,13 @@ end
 cookbook_file "#{cookbook_dir}/.travis.yml" do
     source "travis.yml"
 end
+
+cookbook_file "#{cookbook_dir}/Gemfile" do
+    source "Gemfile"
+end
+
+execute 'bundle install' do
+  cwd cookbook_dir
+  command 'bundle install'
+  action :run
+end
