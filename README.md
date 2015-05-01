@@ -1,6 +1,15 @@
-# et_chef_generator
+# Custom Chef Generator Cookbook
 
-Customised Chef Generator Cookbook for starting your Chef masterpiece 
+Customised Chef Generator Cookbook for starting your Chef masterpiece.  Gives you a beefed up cookbook with
+
+* Rubocop
+* Travis CI
+* Gemfile
+* editorconfig
+* Much better README
+* CHANGELOG
+
+and many other goodies
 
 # Requirements
 
