@@ -30,7 +30,7 @@ This cookbook is not quite like other cookbooks.  Note that you can replace `~/d
 2. You have the option of specifying a generator manually or set ours as the default
   * Specify the generator every time you generate a cookbook. (pass the parent of the `code_generator` folder)
   ```bash
-  chef generate cookbook <your cookbook> --generator-cookbook '~/dev' --email="devops@evertrue.com" --copyright "EverTrue, inc."
+  chef generate cookbook <your cookbook> --generator-cookbook '~/dev' --email="<Maintainer Email>" --copyright "<Your Org>" -l <License>
   ```
   * Always use it. Backup your default chef generator and then link to our generator
   ```bash
@@ -41,7 +41,7 @@ This cookbook is not quite like other cookbooks.  Note that you can replace `~/d
   sudo ln -s ~/dev/code_generator /opt/chefdk/embedded/apps/chef-dk/lib/chef-dk/skeletons/code_generator
 
   # Generate cookbooks like so
-  chef generate cookbook <your cookbook> --email="devops@evertrue.com" --copyright "EverTrue, inc." -l apache2
+  chef generate cookbook <your cookbook> --email="<Maintainer Email>" --copyright "<Your Org>" -l <License>
   ```
 
 
