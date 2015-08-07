@@ -44,7 +44,17 @@ This cookbook is not quite like other cookbooks.  Note that you can replace `~/d
   chef generate cookbook <your cookbook> --email="<Maintainer Email>" --copyright "<Your Org>" -l <License>
   ```
 
+## Alternative Configuration
 
+You can also configure this generator cookbook by adding the following to your `knife.rb`
+
+```ruby
+if defined? ChefDK::Configurable
+  chefdk[:generator_cookbook] = "#{ENV['CHEF_REPO']}/generator_cookbook"
+end
+```
+
+You should clone this repo into `$CHEF_REPO/generator_cookbook`
 
 ## Contributing
 
