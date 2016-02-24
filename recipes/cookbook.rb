@@ -37,11 +37,6 @@ cookbook_file "#{cookbook_dir}/Berksfile" do
   action :create_if_missing
 end
 
-# Rake
-cookbook_file "#{cookbook_dir}/Rakefile" do
-  action :create_if_missing
-end
-
 # TK & Serverspec
 template "#{cookbook_dir}/.kitchen.yml" do
   source 'kitchen.yml.erb'
@@ -117,14 +112,4 @@ end
 # travis
 cookbook_file "#{cookbook_dir}/.travis.yml" do
     source "travis.yml"
-end
-
-cookbook_file "#{cookbook_dir}/Gemfile" do
-    source "Gemfile"
-end
-
-execute 'bundle install' do
-  cwd cookbook_dir
-  command 'bundle install'
-  action :run
 end
