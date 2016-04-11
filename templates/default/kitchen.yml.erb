@@ -12,6 +12,7 @@ driver:
 
 transport:
   ssh_key: <%= ENV['EC2_SSH_KEY_PATH'] %>
+  name: sftp
 
 provisioner:
   name: chef_zero
